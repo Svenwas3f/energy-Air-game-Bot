@@ -2,7 +2,7 @@
 // @name         Energy Air game bot
 // @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
 // @updateURL    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
-// @version      0.6
+// @version      0.7
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f
 // @match        https://game.energy.ch
@@ -10,4 +10,4 @@
 // ==/UserScript==
 
 
-window.alert("Game not available\nNo bot created\nFatal error");
+window.alert("Game not available\nNo bot created\nFatal error\n\nBot under construction");
