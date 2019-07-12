@@ -10,4 +10,4 @@
 // ==/UserScript==
 
 
-window.alert("Game not available\nNo bot created");
+window.alert("Game not available\nNo bot created\nFatal error");
