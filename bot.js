@@ -2,7 +2,7 @@
 // @name         Energy Air game bot
 // @namespace    https://github.com/Svenwas3f/energy-Air-game-Bot-2019/blob/master/bot.js
 // @updateURL    https://github.com/Svenwas3f/energy-Air-game-Bot-2019/blob/master/bot.js
-// @version      0.2
+// @version      0.3
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f
 // @match        https://game.energy.ch
