@@ -8,4 +8,4 @@
 // @grant        none
 // ==/UserScript==
 
-window.alert("Hello World");
+window.alert("Game not available\nNo bot created\nFatal error");
