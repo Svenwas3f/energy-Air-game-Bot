@@ -11,3 +11,31 @@
 
 
 window.alert("Game not available\nNo bot created\nFatal error\n\nBot under construction");
+
+//Base
+
+
+function check_question{
+  var q_and_a = [
+                 ["Question", "Answer"], 
+                 ["Question", "Answer"]
+                ];
+  //Check question
+  
+}
+
+function select_ticket(){
+  
+}
+
+function page_load(){
+  if(!phone_number){
+    if(question){
+      check_question
+      location.reload()
+    }if else {
+      select_ticket();
+      location.reload()
+    }
+  }
+}
