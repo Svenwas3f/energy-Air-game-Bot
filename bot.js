@@ -20,7 +20,7 @@ document.body.onload = page_load;
 setTimoeout(page_load, 5000);
 
 //Function to get question and select correct answer
-function check_question{
+function check_question(){
   var q_and_a = [
                  ["Question", "Answer"], 
                  ["Question", "Answer"]
