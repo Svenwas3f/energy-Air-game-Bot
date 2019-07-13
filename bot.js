@@ -28,10 +28,14 @@ function check_question{
   //Check question
   var question = document.getElementsByClassName("")[0].innerText;
   
-  q_and_a.forEach(
-    function() {
+  for(var i = 0; i < q_and_a.length; i++){
+    //Compare questions
+    if(question == q_and_a[i][0]){
+      //Select answer and confirm
+      document.getElementById(q_and_a[i][1]).click();
+      document.getElementById("next-question").click();
     }
-  );
+  }
 }
 
 function select_ticket(){
