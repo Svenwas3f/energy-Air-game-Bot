@@ -13,15 +13,25 @@
 window.alert("Game not available\nNo bot created\nFatal error\n\nBot under construction");
 
 //Base
+//After body is loaded start the skript
+document.body.onload = page_load;
 
+//Reload page îf after 5s is no change
+setTimoeout(page_load, 5000);
 
+//Function to get question and select correct answer
 function check_question{
   var q_and_a = [
                  ["Question", "Answer"], 
                  ["Question", "Answer"]
                 ];
   //Check question
+  var question = document.getElementsByClassName("")[0].innerText;
   
+  q_and_a.forEach(
+    function() {
+    }
+  );
 }
 
 function select_ticket(){
