@@ -53,7 +53,7 @@ function page_load(){
     if(question){
       check_question();
       location.reload();
-    }if else (ticket){
+    }else if (ticket){
       select_ticket();
       location.reload();
     }
