@@ -22,12 +22,12 @@ setTimeout(page_load, 5000);
 //Function to get question and select correct answer
 function check_question(){
   var q_and_a = [
-                 ["Question", "Answer"], 
+                 ["Question", "Answer"],
                  ["Question", "Answer"]
                 ];
   //Check question
   var question = document.getElementsByClassName("")[0].innerText;
-  
+
   for(var i = 0; i < q_and_a.length; i++){
     //Compare questions
     if(question == q_and_a[i][0]){
@@ -48,7 +48,7 @@ function page_load(){
   var question = (typeof(document.getElementsByClassName("")[0]) != 'undefined' && document.getElementsByClassName("")[0] != null)?true:false;
   var phone_number = (typeof(document.getElementsByClassName("")[0]) != 'undefined' && document.getElementsByClassName("")[0] != null)?true:false;
   var ticket = (typeof(document.getElementsByClassName("")[0]) != 'undefined' && document.getElementsByClassName("")[0] != null)?true:false;
-  
+
   if(!phone_number){
     if(question){
       check_question();
