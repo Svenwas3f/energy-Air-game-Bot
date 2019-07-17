@@ -16,9 +16,6 @@ window.alert("Game not available\nNo bot created\nFatal error\n\nBot under const
 //After body is loaded start the skript
 document.body.onload = page_load;
 
-//Reload page îf after 5s is no change
-setTimeout(page_load, 5000);
-
 //Function to get question and select correct answer
 function check_question(){
   var q_and_a = [
@@ -57,5 +54,8 @@ function page_load(){
       select_ticket();
       location.reload();
     }
+    
+    //Reload page îf after 5s is no change
+    setTimeout(page_load, 5000);
   }
 }
