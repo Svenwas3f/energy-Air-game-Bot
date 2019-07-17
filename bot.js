@@ -17,7 +17,7 @@ window.alert("Game not available\nNo bot created\nFatal error\n\nBot under const
 document.body.onload = page_load;
 
 //Reload page îf after 5s is no change
-setTimoeout(page_load, 5000);
+setTimeout(page_load, 5000);
 
 //Function to get question and select correct answer
 function check_question(){
