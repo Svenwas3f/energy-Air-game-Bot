@@ -54,7 +54,7 @@ function page_load(){
       select_ticket();
       location.reload();
     }
-    
+
     //Reload page îf after 5s is no change
     setTimeout(page_load, 5000);
   }
