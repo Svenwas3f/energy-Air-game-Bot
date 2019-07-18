@@ -14,7 +14,7 @@ window.alert("Game not available\nNo bot created\nFatal error\n\nBot under const
 
 //Base
 //After body is loaded start the skript
-document.body.onload = page_load;
+window.addEventListener("load", page_load);
 
 //Function to get question and select correct answer
 function check_question(){
