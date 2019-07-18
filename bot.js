@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 
-window.alert("Game not available\nNo bot created\nFatal error\n\nBot under construction");
+window.alert("Game not available\nFatal error\n\nBot under construction");
 
 //Base
 //After body is loaded start the skript
