@@ -56,6 +56,6 @@ function page_load(){
     }
 
     //Reload page îf after 5s is no change
-    setTimeout(page_load, 5000);
+    setTimeout(function() {location.reload();} , 5000);
   }
 }
