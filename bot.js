@@ -14,7 +14,7 @@ window.alert("Game not available\nFatal error\n\nBot under construction");
 
 //Base
 //After body is loaded start the skript
-window.addEventListener("load", page_load);
+window.addEventListener("load", page_load();
 
 //Function to get question and select correct answer
 function check_question(){
