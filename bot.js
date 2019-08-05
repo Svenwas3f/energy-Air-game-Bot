@@ -4,7 +4,7 @@
 // @updateURL    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
 // @version      2.0
 // @description  Automate the Energy Air Game
-// @author       Svenwas3f
+// @author       Svenwas3f, RayJW
 // @match        https://game.energy.ch
 // @grant        none
 // ==/UserScript==
@@ -24,7 +24,7 @@ function check_question(){
                  ["Wie viele Mitarbeiter sind am Energy Air im Einsatz?", "1300"],
                  ["Energy Air Tickets kann man…", "gewinnen"],
                  ["Mit welchem dieser Tickets geniesst du die beste Sicht zur Energy Air Bühne?", "XTRA-Circle"],
-                 ["Auf welcher Social-Media-Plattform kann man keine Energy Air Tickets gewinnen?", "Instagram"],
+                 ["Auf welcher Social-Media-Plattform kann man keine Energy Air Tickets gewinnen?", "Twitter"],
                  ["Auf welchem Weg kann man KEINE Energy Air Tickets gewinnen?", "E-Mail"],
                  ["Wann fand das Energy Air zum ersten Mal statt?", "2014"],
                  ["Wie schwer ist die Energy Air Bühne?", "450 Tonnen"],
