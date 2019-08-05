@@ -2,7 +2,7 @@
 // @name         Energy Air game bot
 // @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
 // @updateURL    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
-// @version      1.0
+// @version      2.0
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f
 // @match        https://game.energy.ch
@@ -12,6 +12,10 @@
 //Base
 //After body is loaded start the skript
 window.addEventListener("load", page_load);
+
+//Reload page îf after 5s is no change
+setTimeout(function() {location.reload();} , 5000);
+setTimeout(function() {location.reload();} , 10000);
 
 //Function to get question and select correct answer
 function check_question(){
@@ -84,10 +88,5 @@ function page_load(){
     }else if (ticket){
       select_ticket();
     }
-
-    //Reload page îf after 5s is no change
-      for(var i = 0; i < 100; i++){
-         setTimeout(function() {location.reload();} , 5000);
-      }
   }
 }
