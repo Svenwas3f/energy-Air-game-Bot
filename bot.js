@@ -2,7 +2,7 @@
 // @name         Energy Air game bot
 // @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
 // @updateURL    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
-// @version      2.0
+// @version      2.1
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f, RayJW
 // @match        https://game.energy.ch
@@ -72,7 +72,7 @@ function check_question(){
 }
 
 function select_ticket(){
-  var selected_ticket = Math.floor(Math.random() * 13);
+  var selected_ticket = Math.floor(Math.random() * 12) + 7;
   document.getElementsByTagName("img")[selected_ticket].click();
   location.reload();
 }
