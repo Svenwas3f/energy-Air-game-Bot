@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Energy Air game bot - Developer version
-// @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
+// @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/developer_version_bot.js
 // @version      2.4
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f, RayJW
