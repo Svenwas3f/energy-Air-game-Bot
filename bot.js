@@ -1,8 +1,7 @@
 // ==UserScript==
 // @name         Energy Air game bot
 // @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
-// @updateURL    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
-// @version      2.0
+// @version      2.2
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f, RayJW
 // @match        https://game.energy.ch
@@ -13,8 +12,8 @@
 //After body is loaded start the skript
 window.addEventListener("load", page_load);
 
-//Reload page if after 5s is no change
-//setTimeout(function() {page_load();} , 2000);
+//Restart the script after every succesful run
+setTimeout(function() {location.reload();} , 4500);
 
 //Function to get question and select correct answer
 function check_question(){
@@ -63,7 +62,7 @@ function check_question(){
         }else{
             document.getElementById(q_and_a[i][1]).click();
             document.getElementById("next-question").click();
-            setTimeout(function() {check_question();} , 500);
+            setTimeout(function() {check_question();} , 100);
         }
       break;
     }
@@ -71,9 +70,9 @@ function check_question(){
 }
 
 function select_ticket(){
-  var selected_ticket = Math.floor(Math.random() * 13 + 1);
+  var selected_ticket = Math.floor(Math.random() * 13) + 4;
   document.getElementsByTagName("img")[selected_ticket].click();
-  setTimeout(function() {document.getElementById("lose").click();} , 1000);
+  setTimeout(function() {document.getElementById("lose").click();} , 1250);
 }
 
 function page_load(){
