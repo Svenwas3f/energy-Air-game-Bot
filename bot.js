@@ -14,10 +14,16 @@ window.addEventListener("load", page_load);
 
 //Restart the script after every succesful run
 setTimeout(function() {
-    if((typeof(document.getElementsByClassName("question-text")[0]) != 'undefined' && document.getElementsByClassName("question-text")[0] != null) || (typeof(document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0]) != 'undefined' && document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0] != null)){
+    if((typeof(document.getElementsByClassName("question-text")[0]) != 'undefined' && document.getElementsByClassName("question-text")[0] != null) || (typeof(document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0]) != 'undefined' && document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0] != null) || (typeof(document.getElementsByClassName("btn btn-primary game-button btn-lg")[0]) != 'undefined' && document.getElementsByClassName("btn btn-primary game-button btn-lg")[0] != null)){
         location.reload();
     }
 } , 4500);
+
+setTimeout(function() {
+    if((typeof(document.getElementsByClassName("question-text")[0]) != 'undefined' && document.getElementsByClassName("question-text")[0] != null) || (typeof(document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0]) != 'undefined' && document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0] != null) || (typeof(document.getElementsByClassName("btn btn-primary game-button btn-lg")[0]) != 'undefined' && document.getElementsByClassName("btn btn-primary game-button btn-lg")[0] != null)){
+        location.reload();
+    }
+} , 9000);
 
 //Function to get question and select correct answer
 function check_question(){
