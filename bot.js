@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Energy Air game bot
 // @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
-// @version      2.4
+// @version      2.5
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f, RayJW
 // @match        https://game.energy.ch
@@ -13,14 +13,15 @@
 window.addEventListener("load", page_load);
 
 //Restart the script after every succesful run
+var phone_number = (typeof(document.getElementsByClassName("title-verification")[0]) != 'undefined' && document.getElementsByClassName("title-verification")[0] != null)?true:false;
 setTimeout(function() {
-    if((typeof(document.getElementsByClassName("question-text")[0]) != 'undefined' && document.getElementsByClassName("question-text")[0] != null) || (typeof(document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0]) != 'undefined' && document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0] != null) || (typeof(document.getElementsByClassName("btn btn-primary game-button btn-lg")[0]) != 'undefined' && document.getElementsByClassName("btn btn-primary game-button btn-lg")[0] != null)){
+    if(!phone_number)){
         location.reload();
     }
 } , 4500);
 
 setTimeout(function() {
-    if((typeof(document.getElementsByClassName("question-text")[0]) != 'undefined' && document.getElementsByClassName("question-text")[0] != null) || (typeof(document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0]) != 'undefined' && document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0] != null) || (typeof(document.getElementsByClassName("btn btn-primary game-button btn-lg")[0]) != 'undefined' && document.getElementsByClassName("btn btn-primary game-button btn-lg")[0] != null)){
+    if(!phone_number)){
         location.reload();
     }
 } , 9000);
