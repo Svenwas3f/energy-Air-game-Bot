@@ -15,13 +15,13 @@ window.addEventListener("load", page_load);
 //Restart the script after every succesful run
 var phone_number = (typeof(document.getElementsByClassName("title-verification")[0]) != 'undefined' && document.getElementsByClassName("title-verification")[0] != null)?true:false;
 setTimeout(function() {
-    if(!phone_number)){
+    if(!phone_number){
         location.reload();
     }
 } , 4500);
 
 setTimeout(function() {
-    if(!phone_number)){
+    if(!phone_number){
         location.reload();
     }
 } , 9000);
