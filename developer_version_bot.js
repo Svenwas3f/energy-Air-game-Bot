@@ -61,7 +61,7 @@ function check_question(){
   //Check question
   var question = document.getElementsByClassName("question-text")[0].innerText;
 
-  for(var i = 0; i < q_and_a.length; i++){
+  for(var i = 0; i < q_and_a.length; i++){ 
     //Compare questions
     if(question.toLowerCase() == q_and_a[i][0].toLowerCase()){
       //Select answer and confirm
