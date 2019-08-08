@@ -15,24 +15,27 @@ window.addEventListener("load", page_load);
 //Restart the script after every succesful run
 setInterval(
     function(){
-        if(document.getElementsByClassName("question-number")[0].innerText == "1 / 10")
-            location.reload();
+        if(document.getElementsByClassName("question-number")[0].innerText == "1 / 10"){
+            clearInterval(firs_question);
+        }
     },
     100
 );
 
 setInterval(
     function() {
-        if(typeof(document.getElementsByClassName("title-verification")[0]) === 'undefined' && document.getElementsByClassName("title-verification")[0] === null)
+        if(typeof(document.getElementsByClassName("title-verification")[0]) === 'undefined' && document.getElementsByClassName("title-verification")[0] === null){
             location.reload();
+        }
     },
     10000
 )
 
 setInterval(
     function(){
-        if(document.getElementsByTagName("h1")[0].innerText == "Leider verloren")
+        if(document.getElementsByTagName("h1")[0].innerText == "Leider verloren"){
             location.reload();
+        }
     },
     100
 )
