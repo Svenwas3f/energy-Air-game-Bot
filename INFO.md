@@ -1,4 +1,4 @@
-<h1><b>ENERGY AIR GAME - LOGIN INFO</b></h1>
+# ENERGY AIR GAME - LOGIN INFO
 
 Vielen User ist sicherlich schon aufgefallen, dass man sich nach einer viertel Stunde spielen erneut anmelden muss. Das Problem ist leider nicht lösbar. Wir können hier nicht ganz genau in die Details gehen aber doch noch eine kurze Erklärung wieso ihr euch immer so lästig anmelden müsst.
 
