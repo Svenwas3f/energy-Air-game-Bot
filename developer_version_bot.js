@@ -13,18 +13,21 @@
 window.addEventListener("load", page_load);
 
 //Restart the script after every succesful run
-var phone_number = (typeof(document.getElementsByClassName("title-verification")[0]) != 'undefined' && document.getElementsByClassName("title-verification")[0] != null)?true:false;
-setTimeout(function() {
-    if(!phone_number){
-        location.reload();
-    }
-} , 4500);
+setInterval(
+    function(){
+        if(document.getElementsByClassName("question-number")[0].innerText == "1 / 10")
+            location.reload();
+    },
+    100
+);
 
-setTimeout(function() {
-    if(!phone_number){
-        location.reload();
-    }
-} , 9000);
+setInterval(
+    function() {
+        if(typeof(document.getElementsByClassName("title-verification")[0]) === 'undefined' && document.getElementsByClassName("title-verification")[0] === null)
+            location.reload();
+    },
+    10000
+)
 
 //Function to get question and select correct answer
 function check_question(){
