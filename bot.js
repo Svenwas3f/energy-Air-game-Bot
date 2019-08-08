@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Energy Air game bot
 // @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/bot.js
-// @version      2.5
+// @version      2.6
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f, RayJW
 // @match        https://game.energy.ch
@@ -13,18 +13,32 @@
 window.addEventListener("load", page_load);
 
 //Restart the script after every succesful run
-var phone_number = (typeof(document.getElementsByClassName("title-verification")[0]) != 'undefined' && document.getElementsByClassName("title-verification")[0] != null)?true:false;
-setTimeout(function() {
-    if(!phone_number){
-        location.reload();
-    }
-} , 4500);
+setInterval(
+    function(){
+        if(document.getElementsByClassName("question-number")[0].innerText == "1 / 10"){
+            location.reload();
+        }
+    },
+    1000
+);
 
-setTimeout(function() {
-    if(!phone_number){
-        location.reload();
-    }
-} , 9000);
+setInterval(
+    function() {
+        if(typeof(document.getElementsByClassName("title-verification")[0]) == 'undefined' && document.getElementsByClassName("title-verification")[0] == null){
+            location.reload();
+        }
+    },
+    7500
+)
+
+setInterval(
+    function(){
+        if(document.getElementsByTagName("h1")[0].innerText == "Leider verloren"){
+            location.reload();
+        }
+    },
+    1000
+)
 
 //Function to get question and select correct answer
 function check_question(){
@@ -91,7 +105,7 @@ function page_load(){
   var phone_number = (typeof(document.getElementsByClassName("title-verification")[0]) != 'undefined' && document.getElementsByClassName("title-verification")[0] != null)?true:false;
   var ticket = (typeof(document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0]) != 'undefined' && document.getElementsByClassName("circle col-xs-4 col-sm-3 col-md-4 col-lg-3")[0] != null)?true:false;
 
-  if(!phone_number){ 
+  if(!phone_number){
     if(question){
       check_question();
     }else if (ticket){
