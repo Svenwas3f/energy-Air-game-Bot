@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Energy Air game bot - Developer version
 // @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/developer_version_bot.js
-// @version      2.5
+// @version      2.6
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f, RayJW
 // @match        https://game.energy.ch
@@ -27,6 +27,14 @@ setInterval(
             location.reload();
     },
     10000
+)
+
+setInterval(
+    function(){
+        if(document.getElementsByTagName("h1")[0].innerText == "Leider verloren")
+            location.reload();
+    },
+    100
 )
 
 //Function to get question and select correct answer
