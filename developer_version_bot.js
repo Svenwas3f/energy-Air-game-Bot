@@ -19,7 +19,7 @@ setInterval(
             clearInterval(firs_question);
         }
     },
-    100
+    1000
 );
 
 setInterval(
@@ -37,7 +37,7 @@ setInterval(
             location.reload();
         }
     },
-    100
+    1000
 )
 
 //Function to get question and select correct answer
