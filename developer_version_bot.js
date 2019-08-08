@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Energy Air game bot - Developer version
 // @namespace    https://raw.githubusercontent.com/Svenwas3f/energy-Air-game-Bot-2019/master/developer_version_bot.js
-// @version      2.7
+// @version      2.8
 // @description  Automate the Energy Air Game
 // @author       Svenwas3f, RayJW
 // @match        https://game.energy.ch
@@ -39,6 +39,11 @@ setInterval(
     },
     1000
 )
+
+//Function for time
+function getRandomTime(){
+    return Math.floor(Math.random() * -999 + 2000);
+}
 
 //Function to get question and select correct answer
 function check_question(){
@@ -83,11 +88,11 @@ function check_question(){
         if(document.getElementsByClassName("question-number")[0].innerText == "10 / 10"){
             document.getElementById(q_and_a[i][1]).click();
             document.getElementById("next-question").click();
-            setTimeout(function() {select_ticket();} , 1000);
+            setTimeout(function() {select_ticket();} , getRandomTime());
         }else{
             document.getElementById(q_and_a[i][1]).click();
             document.getElementById("next-question").click();
-            setTimeout(function() {check_question();} , 1000);
+            setTimeout(function() {check_question();} , getRandomTime());
         }
       break;
     }
@@ -97,7 +102,7 @@ function check_question(){
 function select_ticket(){
   var selected_ticket = Math.floor(Math.random() * 13) + 4;
   document.getElementsByTagName("img")[selected_ticket].click();
-  setTimeout(function() {document.getElementById("lose").click();} , 1250);
+  setTimeout(function() {document.getElementById("lose").click();} , getRandomTime());
 }
 
 function page_load(){
