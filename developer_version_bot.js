@@ -16,7 +16,7 @@ window.addEventListener("load", page_load);
 setInterval(
     function(){
         if(document.getElementsByClassName("question-number")[0].innerText == "1 / 10"){
-            clearInterval(firs_question);
+            location.reload();
         }
     },
     1000
