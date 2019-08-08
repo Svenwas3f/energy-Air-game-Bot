@@ -87,7 +87,7 @@ function check_question(){
         }else{
             document.getElementById(q_and_a[i][1]).click();
             document.getElementById("next-question").click();
-            setTimeout(function() {check_question();} , 100);
+            setTimeout(function() {check_question();} , 1000);
         }
       break;
     }
