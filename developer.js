@@ -7,3 +7,8 @@
 // @match        https://game.energy.ch
 // @grant        none
 // ==/UserScript==
+
+
+function test() {
+  
+}
