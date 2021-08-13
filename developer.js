@@ -13,16 +13,16 @@ window.onload = function() {
   console.log("Loaded");
 
   // Check what to do
-  if( document.getElementsByClassName("question-text")[0] != undefined) {
+  if( typeof(document.getElementsByClassName("question-text")[0)] != 'undefined') {
     // Question
     console.log("Question");
-  }else if ( document.getElementsByClassName("failed")[0] != undefined ) {
+  }else if ( typeof(document.getElementsByClassName("failed")[0]) != 'undefined' ) {
     // Quiz failed
     console.log("Failed");
-  }else if( document.getElementsByClassName("ticket-slot")[0] != undefined ) {
+  }else if( typeof(document.getElementsByClassName("ticket-slot")[0]) != 'undefined' ) {
     //ticket-slot, tickets
     console.log("Choose ticket option");
-  }else if( document.getElementsByClassName("circle")[0] != undefined ) {
+  }else if( typeof(document.getElementsByClassName("circle")[0]) != 'undefined' ) {
     // circle
     console.log("bubble");
   }
