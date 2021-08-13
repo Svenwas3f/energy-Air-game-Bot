@@ -10,6 +10,8 @@
 
 // Wait until page is loaded
 window.onload = function() {
+  console.log("Loaded");
+
   // Check what to do
   if( document.getElementsByClassName("question-text")[0] != undefined) {
     // Question
