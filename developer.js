@@ -12,18 +12,34 @@
 window.onload = function() {
   console.log("Loaded");
 
-  // Check what to do
-  if( typeof(document.getElementsByClassName("question-text")[0)] != 'undefined') {
-    // Question
-    console.log("Question");
-  }else if ( typeof(document.getElementsByClassName("failed")[0]) != 'undefined' ) {
-    // Quiz failed
-    console.log("Failed");
-  }else if( typeof(document.getElementsByClassName("ticket-slot")[0]) != 'undefined' ) {
-    //ticket-slot, tickets
-    console.log("Choose ticket option");
-  }else if( typeof(document.getElementsByClassName("circle")[0]) != 'undefined' ) {
-    // circle
-    console.log("bubble");
-  }
+  let time = 0;
+  var action = setInterval( function () {
+    // Check time
+    if( time > 7000) {
+      clearInterval( action ); // Break function
+      loaction.reload(); // Rload page
+    }
+
+    // Check what to do
+    if( typeof(document.getElementsByClassName("question-text")[0]) != 'undefined' ) {
+      // Question
+      console.log("Question");
+      clearInterval( action ); // Break function 
+    }else if ( typeof(document.getElementsByClassName("failed")[0]) != 'undefined' ) {
+      // Quiz failed
+      console.log("Failed");
+      clearInterval( action ); // Break function 
+    }else if( typeof(document.getElementsByClassName("ticket-slot")[0]) != 'undefined' ) {
+      //ticket-slot, tickets
+      console.log("Choose ticket option");
+      clearInterval( action ); // Break function 
+    }else if( typeof(document.getElementsByClassName("circle")[0]) != 'undefined' ) {
+      // circle
+      console.log("bubble");
+      clearInterval( action ); // Break function 
+    }
+
+    // Add time
+    time += 100;
+  }, 100);
 }
