@@ -8,4 +8,4 @@ Important infos: [Usgae of the bot](https://github.com/Svenwas3f/energy-Air-game
 It is recomended to use the bot.js
 
 # Wiki
-Installation guide foung in [Wiki](https://github.com/Svenwas3f/energy-Air-game-Bot-2019/wiki) (German)
+Installation guide found in [Wiki](https://github.com/Svenwas3f/energy-Air-game-Bot-2019/wiki) (German)
