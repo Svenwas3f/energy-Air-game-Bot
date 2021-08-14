@@ -10,7 +10,7 @@
 
 window.onload = function () {
   let time = 0;
-  let interval_time = Math.floor((Math.random() * (1 - 0.75) + 0.75) * 1000);
+  let interval_time = 100;
   let attempt = 1;
   var action = setInterval( function () {
     // Check time
