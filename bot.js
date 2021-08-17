@@ -90,7 +90,7 @@ function solve_question( question ) {
   var q_and_a = [
                   ["Wie heisst der offizielle Instagram-Account des Energy Air?", "@energyair_official"],
                   ["Wie lange dauerte das Energy Air 2019?", "5 1/2 Stunden"],
-                  ["Nach welchem Kriterium wählt das Energy Team die Acts für das Energy Air aus?", "Musiker*innen, welche einen grossen Bekanntheitsgrad haben"],
+                  ["Nach welchem Kriterium wählt das Energy Team die Acts für das Energy Air aus?", "Musiker*innen aus der aktuellen Energy Playlist"],
                   ["Wer war der allererste Act in der Geschichte des Energy Air?", "Bastian Baker"],
                   ["Was folgt am diesjährigen Energy Air als krönender Abschluss?", "Aftershowparty"],
                   ["Wie heisst die aktuelle Kampagne gegen Hass im Internet, welche Swisscom mit Energy lanciert hat?", "Mute the hate"],
@@ -100,7 +100,7 @@ function solve_question( question ) {
                   ["Unter welchem Motto feiern wir am 4. September 2021 das Energy Air?", "We are back."],
 
                   ["Welcher Act feierte am letzten Energy Air mit einem neuen Song eine Weltpremiere?", "Aloe Blacc"],
-                  ["Mit welchem aufblasbaren Tier konnten zwei Auserwählte am letzten Energy Air über die ganze Meute crowdsurfen?", "Einhorn"], // Here
+                  ["Mit welchem aufblasbaren Tier konnten zwei Auserwählte am letzten Energy Air über die ganze Meute crowdsurfen?", "Schwan"], // Here
                   ["Welches Schweizer DJ-Duo sorgte am Energy Air 2019 zu Beginn für reichlich Stimmung?", "Averdeck"],
                   ["In welcher beliebten Serie war Tally Weijl zu sehen?", "Gossip Girl"],
                   ["Welcher Künstler musste am letzten Energy Air Backstage einen Part aus dem Dialektrapsong von Sandro vorrappen?", "Stress"],
@@ -117,11 +117,11 @@ function solve_question( question ) {
                   ["In welchen Farben tritt das Energy Air Logo jährlich für das Sommerfinale auf?", "Blau und Weiss"],
                   ["Wie kannst du deine Gewinnchancen bei Ticketverlosungen für Energy Events verdoppeln?", "Mit einer Energy One Membership"],
                   ["Welchen Kleidungsstil verfolgt Tally Weijl grundsätzlich?", "Just in time (voll im Trend)"],
-                  ["Welcher Act war noch nie an einem Energy Air dabei?", "Cro"],
-                  ["Wie alt muss man sein, um ohne erwachsene Begleitung am Energy Air teilzunehmen?", "16 Jahre"],
-                  ["Welche zwei Energy Kultfiguren mischten das Energy Air 2017 richtig auf?", "Annegret & Ernst Bünzli"],
+                  ["Welcher Act war noch nie an einem Energy Air dabei?", "Dua Lipa"],
+                  ["Wie alt muss man sein, um ohne erwachsene Begleitung am Energy Air teilzunehmen?", "14 Jahre"],
+                  ["Welche zwei Energy Kultfiguren mischten das Energy Air 2017 richtig auf?", "Tinu & Dànu"],
 
-                  ["Was war das Erste, was Künstler Knackeboul nach seinem Auftritt 2014 Backstage gemacht hat?", "Mit seinem Mami ein kühles Bier getrunken"],
+                  ["Was war das Erste, was Künstler Knackeboul nach seinem Auftritt 2014 Backstage gemacht hat?", "Fans einen Backstage-Rundgang ermöglicht"],
                   ["Wie wird TALLY WEiJL ausgesprochen?", "Talli Weil"],
                   ["In welcher Location findet das Energy Air 2021 unter freiem Himmel statt?", "Stade de Suisse Wankdorf"],
                   ["Welche Musikerin wurde am Energy Air 2018 von einer 9-jährige Besucherin auf der Bühne gecovert?", "Namika"],
